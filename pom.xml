@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.TA26</groupId>
-	<artifactId>ejemplo_jwt</artifactId>
+	<artifactId>ej1_piezas_proveedores_token</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
-	<name>ejemplo_jwt</name>
+	<name>ej1_piezas_proveedores_token</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>17</java.version>
