@@ -61,6 +61,9 @@ public class WebSecurity {
              .requestMatchers(HttpMethod.POST, "/login").permitAll()
              .requestMatchers(HttpMethod.GET, "/users/").permitAll()
              .requestMatchers(HttpMethod.GET, "/users/**").permitAll()
+             .requestMatchers(HttpMethod.GET, "/api/piezas").hasAnyAuthority("piezas")
+             .requestMatchers(HttpMethod.GET, "/api/proveedores").hasAnyAuthority("admin")
+             .requestMatchers(HttpMethod.GET, "/api/suministra").hasAnyAuthority("admin", "piezas")
              .anyRequest().authenticated()
              .and()
              .addFilterBefore(jwtAuthenticationFilter(), UsernamePasswordAuthenticationFilter.class);
